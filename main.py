@@ -5,14 +5,14 @@ from ga import ga
 from population import init_population
 from matplotlib import pyplot as plt
 
-bounds = [0, 6]     # 取值范围
+bounds = [-10, 10]     # 取值范围
 pop_size = 64     # 种群数量
-gene_size = 23      # 基因长度
+gene_size = 25      # 基因长度
 gene_count = 2      # 基因数量
 pc = 0.75           # 杂交概率
-pm = 0.4           # 变异概率
+pm = 0.35           # 变异概率
 max_epoch = 10000        # 最大迭代次数
-max_best_unchanged_epoch = 100 # 最好个体未发生变化代数
+max_best_unchanged_epoch = 500 # 最好个体未发生变化代数
 
 def main():
     max_fitness = []
